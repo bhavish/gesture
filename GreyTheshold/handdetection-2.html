@@ -1,0 +1,1056 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head profile="http://gmpg.org/xfn/11">	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+<title>Andol &raquo; handDetection source file .CPP</title>	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+ 
+<!-- leave this for stats -->        
+<link rel="canonical" href="http://www.andol.info"/>
+<link rel='stylesheet' href='http://www.andol.info/wp-content/themes/tree/style.css' />	
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.andol.info/feed" />	
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://www.andol.info/feed/rss" />	
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://www.andol.info/feed/atom" />	
+<link rel="pingback" href="http://www.andol.info/xmlrpc.php" />        
+	<link rel='archives' title='January 2012' href='http://www.andol.info/date/2012/01' />
+	<link rel='archives' title='December 2011' href='http://www.andol.info/date/2011/12' />
+	<link rel='archives' title='November 2011' href='http://www.andol.info/date/2011/11' />
+	<link rel='archives' title='October 2011' href='http://www.andol.info/date/2011/10' />
+	<link rel='archives' title='July 2011' href='http://www.andol.info/date/2011/07' />
+	<link rel='archives' title='April 2011' href='http://www.andol.info/date/2011/04' />
+	<link rel='archives' title='March 2011' href='http://www.andol.info/date/2011/03' />
+	<link rel='archives' title='February 2011' href='http://www.andol.info/date/2011/02' />
+	<link rel='archives' title='December 2010' href='http://www.andol.info/date/2010/12' />
+	<link rel='archives' title='November 2010' href='http://www.andol.info/date/2010/11' />
+	<link rel='archives' title='October 2010' href='http://www.andol.info/date/2010/10' />
+	<link rel='archives' title='September 2010' href='http://www.andol.info/date/2010/09' />
+	<link rel='archives' title='August 2010' href='http://www.andol.info/date/2010/08' />
+	<link rel='archives' title='July 2010' href='http://www.andol.info/date/2010/07' />
+	<link rel='archives' title='June 2010' href='http://www.andol.info/date/2010/06' />
+	<link rel='archives' title='May 2010' href='http://www.andol.info/date/2010/05' />
+	<link rel='archives' title='April 2010' href='http://www.andol.info/date/2010/04' />
+	<link rel='archives' title='March 2010' href='http://www.andol.info/date/2010/03' />
+	<link rel='archives' title='February 2010' href='http://www.andol.info/date/2010/02' />
+	<link rel='archives' title='January 2010' href='http://www.andol.info/date/2010/01' />
+	<link rel='archives' title='December 2009' href='http://www.andol.info/date/2009/12' />
+	<link rel='archives' title='November 2009' href='http://www.andol.info/date/2009/11' />
+	<link rel='archives' title='October 2009' href='http://www.andol.info/date/2009/10' />
+	<link rel='archives' title='September 2009' href='http://www.andol.info/date/2009/09' />
+	<link rel='archives' title='July 2009' href='http://www.andol.info/date/2009/07' />
+	<link rel='archives' title='June 2009' href='http://www.andol.info/date/2009/06' />
+	<link rel='archives' title='May 2009' href='http://www.andol.info/date/2009/05' />
+	<link rel='archives' title='April 2009' href='http://www.andol.info/date/2009/04' />
+	<link rel='archives' title='March 2009' href='http://www.andol.info/date/2009/03' />
+	<link rel='archives' title='February 2009' href='http://www.andol.info/date/2009/02' />
+	<link rel='archives' title='January 2009' href='http://www.andol.info/date/2009/01' />
+	<link rel='archives' title='December 2008' href='http://www.andol.info/date/2008/12' />
+	<link rel='archives' title='November 2008' href='http://www.andol.info/date/2008/11' />
+	<link rel='archives' title='October 2008' href='http://www.andol.info/date/2008/10' />
+	<link rel='archives' title='September 2008' href='http://www.andol.info/date/2008/09' />
+	<link rel='archives' title='August 2008' href='http://www.andol.info/date/2008/08' />
+	<link rel='archives' title='July 2008' href='http://www.andol.info/date/2008/07' />
+    
+<link rel="alternate" type="application/rss+xml" title="Andol &raquo; handDetection source file .CPP Comments Feed" href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/feed" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.andol.info/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.andol.info/wp-includes/wlwmanifest.xml" /> 
+<link rel='canonical' href='http://www.andol.info/hci/830.htm/attachment/handdetection-2' />
+  
+
+      
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>    
+
+<script type="text/javascript" src="http://www.andol.info/wp-content/themes/tree/js/lightbox/jquery.lightbox-0.5.js"></script>    
+
+<link rel="stylesheet" type="text/css" href="http://www.andol.info/wp-content/themes/tree/js/lightbox/jquery.lightbox-0.5.css" media="screen" />    
+
+<script type="text/javascript">  
+
+$(function() {   
+
+
+
+$('a[@href$=".jpg"],a[@href$=".png"],a[@href$=".gif"]').lightBox();
+
+$('#sbox').blur(function(){$('#suggestionlist').html('');}).keyup(function(){$.get('/wp-content/themes/tree/ajaxsearch.php',{search: $('#sbox').val()}, function(data) { $('#suggestionlist').html(data);},'html');});
+
+
+
+});
+</script>    
+
+</head>
+
+<body>
+<div id="header">
+<a name="top"></a>	
+
+<p>Just value your mind</p>	
+
+<h1>
+	<a href="http://www.andol.info" title='Andol-Just value your mind'>
+		<img src='http://www.andol.info/wp-content/themes/tree/img/andolLogo.png' alt='andol.info' />
+	</a>
+</h1>
+
+<form method="get" id="hdsearchform" action="http://www.andol.info/">
+	<div><input type="text" name="s" id="sbox" /><input type="submit" id="searchsubmit" value="Search" /></div>
+	<span id="suggestionlist"></span>
+</form>
+
+</div>
+
+<div id="pagenavdiv">
+	<ul id="pagenav">
+	<li>
+	<a href="http://www.andol.info/" title="HOME">HOME</a></li>	
+	<li class="page_item page-item-1701"><a href="http://www.andol.info/life">LIFE</a></li>
+<li class="page_item page-item-3"><a href="http://www.andol.info/research">RESEARCH</a></li>
+<li class="page_item page-item-1763"><a href="http://www.andol.info/download">DOWNLOAD</a></li>
+<li class="page_item page-item-1082"><a href="http://www.andol.info/about">ABOUT</a></li>
+<li class="page_item page-item-596"><a href="http://www.andol.info/links">LINKS</a></li>
+       
+
+	<li><a href="http://www.google.com/ig/add?feedurl=http://www.andol.info/feed" target='_blank' rel='rss external' title="RSS">RSS</a>
+	</li>
+	</ul>
+</div>
+
+
+
+<!-- end header -->
+<div id="content">
+
+<div id="left">
+
+<!---the loop--->
+
+
+<div class="post singlepost" id="post-833833">
+<p class="fecha">Friday, March 27th, 2009, 1031 days ago</p>
+<h2><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2" rel="bookmark" title="Permanent Link to handDetection source file .CPP">handDetection source file .CPP</a></h2> 
+
+<!--adsense start-->
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-1646140975322436";
+/* single page large block */
+google_ad_slot = "3499085921";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<!--adsense end-->
+
+<p class="attachment"><a href='http://www.andol.info/wp-content/uploads/2009/03/handdetection.cpp' title='handDetection source file .CPP'>handDetection source file .CPP</a></p>
+
+<!-- google plus -->
+<br/><g:plusone size="medium"></g:plusone>
+<!-- google plus end -->
+
+<div id='rltpost'>
+<p><strong> POSTS MAY BE OF INTEREST </strong></p>
+<ul>
+</ul>
+</div>
+
+<div class="commentform"> 
+<!-- You can start editing here. -->
+
+	<h3 id="comments">67 Responses to &#8220;handDetection source file .CPP&#8221;</h3>
+	<ol class="commentlist">
+			<li class="comment even thread-even depth-1" id="comment-324">
+				<div id="div-comment-324" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/e7288f1cd52a5df61fe0550a8b97cc4e?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://ff' rel='external nofollow' class='url'>ffff</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-324">
+			1/ April/ 2009 at 11:01 AM</a>		</div>
+
+		<p>fgsdgdsf</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=324#respond' onclick='return addComment.moveForm("div-comment-324", "324", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-401">
+				<div id="div-comment-401" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/a940133e12f1a6ebd9b1b81424ad8ea8?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">Nguyen</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-401">
+			24/ April/ 2009 at 4:33 AM</a>		</div>
+
+		<p>thank you for your writting about hand gesture recognition with openCV.<br />
+This is exactly what i&#8217;m finding.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=401#respond' onclick='return addComment.moveForm("div-comment-401", "401", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1 parent" id="comment-402">
+				<div id="div-comment-402" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/a940133e12f1a6ebd9b1b81424ad8ea8?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">Nguyen</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-402">
+			24/ April/ 2009 at 4:38 AM</a>		</div>
+
+		<p>I hope you can present some more code on this</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=402#respond' onclick='return addComment.moveForm("div-comment-402", "402", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment odd alt depth-2 parent" id="comment-404">
+				<div id="div-comment-404" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-404">
+			24/ April/ 2009 at 7:08 AM</a>		</div>
+
+		<p>Sure i will. <img src='http://www.andol.info/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /> </p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=404#respond' onclick='return addComment.moveForm("div-comment-404", "404", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment even depth-3" id="comment-2978">
+				<div id="div-comment-2978" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/6630e84c255b4215d0dbb267f8fb94e4?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">tina</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-2978">
+			19/ August/ 2011 at 2:17 AM</a>		</div>
+
+		<p>Hi Andol,</p>
+<p>I am new in OpenCV . </p>
+<p>I need to detect my hand using Frame difference Method .<br />
+Since Frame difference remove background and give edges in form of shadow as result . </p>
+<p>Result: <a href="http://imm.io/8cM8" rel="nofollow">http://imm.io/8cM8</a><br />
+<a href="http://imm.io/8cMa" rel="nofollow">http://imm.io/8cMa</a></p>
+<p>Code:</p>
+<p>Here fram1 and fram2 are extracted framse from cam</p>
+<p>frameA = cvCloneImage( fram1 );//clone of orignal frame 1<br />
+frameB = cvCloneImage( fram2 );//clone of originak frame2</p>
+<p>//Set the HSV skin color threhshold values.\n&#8221;);<br />
+//Only for hand skin values<br />
+double h1 =0, s1 = 30, v1 = 80;<br />
+double h2 =20, s2 = 150, v2 = 255;</p>
+<p>// set the min and max value..\n&#8221;);<br />
+CvScalar const minVal = cvScalar( h1,s1,v1 );<br />
+CvScalar const maxVal = cvScalar( h2,s2,v2 );</p>
+<p>/*==========&gt;&gt; Background removing in hsv Space &amp; MEdian Smooth &lt; Background removing in hsv Space &amp; MEdian Smooth================*/</p>
+<p>/*==========Start::==Hand Segmentation and noise removing===========*/</p>
+<p>//apply the thresold on copy of hsvImgSub..\n&#8221;);<br />
+cvInRangeS( cpyHSVDiff , minVal , maxVal , hsvThreshy );</p>
+<p>///Smooth the hsvSubThreshold image&#8230;\n&#8221;);</p>
+<p>//erode or dilate( element that determines the shape of a pixel neighborhood over which the maximum is taken: )<br />
+//&#8230;&#8230;..with 3 x 3 structuring element</p>
+<p>cvDilate( hsvThreshy , cpyThreshy , 0 , 2 );</p>
+<p>cpyThreshy = cvCloneImage( hsvThreshy );</p>
+<p>// find the contour of moving images in the frame..\n&#8221;);<br />
+CvMemStorage* g_storage = cvCreateMemStorage(0);<br />
+CvSeq* contours = 0;<br />
+g::nFrmNum++;</p>
+<p>// find the number of contours..\n&#8221;);<br />
+int nc = cvFindContours(cpyThreshy,g_storage,&amp;contours,sizeof(CvContour), CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE, cvPoint(0,0));</p>
+<p>CvSeq* contours2 = NULL;</p>
+<p>double result = 0, result2 = 0;</p>
+<p>//Area calculated from contours<br />
+while(contours)<br />
+{<br />
+result = fabs( cvContourArea( contours, CV_WHOLE_SEQ ) );</p>
+<p>if ( result &gt; result2)<br />
+{<br />
+result2 = result; contours2 = contours;<br />
+};<br />
+contours = contours-&gt;h_next;<br />
+};</p>
+<p>if(contours2)<br />
+{<br />
+CvRect rect = cvBoundingRect( contours2 , 0 );<br />
+int x = rect.x;<br />
+int y = rect.y;</p>
+<p>cvRectangle( frameA, cvPoint(rect.x, rect.y + rect.height), cvPoint(rect.x + rect.width, rect.y), CV_RGB(255, 0, 0), 5, 8, 0 );</p>
+<p>}</p>
+<p>Note: </p>
+<p>Since due to frame difference, only edges are detected .<br />
+but broken so, rectangle set where edges appeared .</p>
+<p>I used frame difference just for removing background,.<br />
+I need hand ,.not edges .<br />
+I want to set rectangle on this threshold image and then check the threshold image data with original image . if matched then hand extracted . </p>
+<p>How can i set the rectangle on my hand in thresholded image.<br />
+While my edges are broken. </p>
+<p>Please guide me ;<br />
+Thanks</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=2978#respond' onclick='return addComment.moveForm("div-comment-2978", "2978", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+		<li class="comment odd alt depth-2 parent" id="comment-405">
+				<div id="div-comment-405" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-405">
+			24/ April/ 2009 at 8:10 AM</a>		</div>
+
+		<p>Actually, i am preparing for some precise hand gestures detection &amp; recognitions, it will come up soon.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=405#respond' onclick='return addComment.moveForm("div-comment-405", "405", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment even depth-3" id="comment-3633">
+				<div id="div-comment-3633" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/c228e923cbeed151f6f7dea10f92b199?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">Patrick</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-3633">
+			13/ November/ 2011 at 8:29 PM</a>		</div>
+
+		<p>thanks <img src='http://www.andol.info/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=3633#respond' onclick='return addComment.moveForm("div-comment-3633", "3633", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+</ul>
+</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-572">
+				<div id="div-comment-572" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/48f3bb230a74033e96fcdd0369766d1b?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">hack</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-572">
+			9/ July/ 2009 at 5:11 PM</a>		</div>
+
+		<p>I have compiled the source code,but it requires a file named VideoInput.h<br />
+I don&#8217;t have it..could you please tell me where to find it?<br />
+Thanks for your hard work</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=572#respond' onclick='return addComment.moveForm("div-comment-572", "572", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment byuser comment-author-andol bypostauthor even depth-2" id="comment-574">
+				<div id="div-comment-574" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-574">
+			9/ July/ 2009 at 7:05 PM</a>		</div>
+
+		<p>you can just delete videoinput.h. i used that file to debugg another application in my computer.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=574#respond' onclick='return addComment.moveForm("div-comment-574", "574", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+		<li class="comment odd alt thread-even depth-1 parent" id="comment-573">
+				<div id="div-comment-573" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/48f3bb230a74033e96fcdd0369766d1b?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">hack</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-573">
+			9/ July/ 2009 at 5:17 PM</a>		</div>
+
+		<p>it also gives me some errors :<br />
+Linking&#8230;<br />
+1.obj : error LNK2001: unresolved external symbol _cvDestroyAllWindows<br />
+1.obj : error LNK2001: unresolved external symbol _cvReleaseCapture<br />
+1.obj : error LNK2001: unresolved external symbol _cvWaitKey<br />
+1.obj : error LNK2001: unresolved external symbol _cvInRangeS<br />
+1.obj : error LNK2001: unresolved external symbol _cvCvtColor<br />
+1.obj : error LNK2001: unresolved external symbol _cvShowImage<br />
+1.obj : error LNK2001: unresolved external symbol _cvNamedWindow<br />
+1.obj : error LNK2001: unresolved external symbol _cvCreateImage<br />
+1.obj : error LNK2001: unresolved external symbol _cvGetSize<br />
+1.obj : error LNK2001: unresolved external symbol _cvQueryFrame<br />
+1.obj : error LNK2001: unresolved external symbol _cvCreateCameraCapture<br />
+Debug/a.exe : fatal error LNK1120: 11 unresolved externals<br />
+Error executing link.exe.</p>
+<p>Could you tell me what cause that errors?<br />
+Thank You!</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=573#respond' onclick='return addComment.moveForm("div-comment-573", "573", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment byuser comment-author-andol bypostauthor even depth-2 parent" id="comment-575">
+				<div id="div-comment-575" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-575">
+			9/ July/ 2009 at 7:07 PM</a>		</div>
+
+		<p>i think you should check your visual studio configuration and project property first. because &#8216;unresolved external symbol&#8217; comes from header file missing.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=575#respond' onclick='return addComment.moveForm("div-comment-575", "575", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment odd alt depth-3" id="comment-1030">
+				<div id="div-comment-1030" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/8f57501ff2de870956ea2b9db4187562?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">Daniel</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1030">
+			19/ April/ 2010 at 12:11 PM</a>		</div>
+
+		<p>I face the same error . could you please tell me how did you fixed it ?</p>
+<p>Regards,<br />
+DAniel</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1030#respond' onclick='return addComment.moveForm("div-comment-1030", "1030", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment byuser comment-author-andol bypostauthor even depth-3" id="comment-1031">
+				<div id="div-comment-1031" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1031">
+			19/ April/ 2010 at 12:56 PM</a>		</div>
+
+		<p>@Daniel please check your installation &#038; included file s are all rightly set. Or search the error code in Google, there are plenty of solutions according to errors.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1031#respond' onclick='return addComment.moveForm("div-comment-1031", "1031", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+		<li class="comment odd alt depth-2" id="comment-1033">
+				<div id="div-comment-1033" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/8f57501ff2de870956ea2b9db4187562?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">Daniel</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1033">
+			19/ April/ 2010 at 4:47 PM</a>		</div>
+
+		<p>I have manage to compile it. Basically must be set the environment for project. I&#8217;m using VC++ 6. Page below it&#8217;s about VS 2003-2005 but directions for project settings are very usefull. I have followed the linker section too (fast reading/jumping leads to bad results),  it complied and it&#8217;s running.</p>
+<p><a href="http://opencv.willowgarage.com/wiki/VisualC%2B%2B" rel="nofollow">http://opencv.willowgarage.com/wiki/VisualC%2B%2B</a></p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1033#respond' onclick='return addComment.moveForm("div-comment-1033", "1033", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment even depth-2 parent" id="comment-1615">
+				<div id="div-comment-1615" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1f410edee0b222d4fd1c02a72fc49532?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">linxiflying</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1615">
+			17/ December/ 2010 at 6:31 AM</a>		</div>
+
+		<p>I think the program lacks of head files ,you can add these files  , following like this  project&#8211;&gt;settings&#8211;&gt;Link&#8211;&gt;Object/Library modules   (cv.lib cvaux.lib cxcore.lib highgui.lib )</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1615#respond' onclick='return addComment.moveForm("div-comment-1615", "1615", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment byuser comment-author-andol bypostauthor odd alt depth-3" id="comment-1617">
+				<div id="div-comment-1617" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1617">
+			17/ December/ 2010 at 9:44 AM</a>		</div>
+
+		<p>cheers Linxiflying</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1617#respond' onclick='return addComment.moveForm("div-comment-1617", "1617", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+</ul>
+</li>
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-590">
+				<div id="div-comment-590" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/3a5887a429816adea44116d69b07f9fe?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://liyang' rel='external nofollow' class='url'>liyang</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-590">
+			20/ July/ 2009 at 2:59 AM</a>		</div>
+
+		<p>great job!</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=590#respond' onclick='return addComment.moveForm("div-comment-590", "590", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-even depth-1 parent" id="comment-678">
+				<div id="div-comment-678" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/80b4142df1541fd4a546226b86397c7e?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">ninhnv</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-678">
+			5/ September/ 2009 at 6:35 PM</a>		</div>
+
+		<p>thank alot!</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=678#respond' onclick='return addComment.moveForm("div-comment-678", "678", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment byuser comment-author-andol bypostauthor even depth-2" id="comment-680">
+				<div id="div-comment-680" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-680">
+			6/ September/ 2009 at 11:35 AM</a>		</div>
+
+		<p>you welcome.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=680#respond' onclick='return addComment.moveForm("div-comment-680", "680", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-713">
+				<div id="div-comment-713" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/f5552d689460784e89544c0faf6a6c47?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">jason</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-713">
+			8/ October/ 2009 at 5:45 PM</a>		</div>
+
+		<p>helloow..nice program but i cannot download the source code..:(&#8220;Oops, something you are looking for isn&#8217;t here.<br />
+Go back to Andol.info&#8221;<br />
+please if you can ..send to my email..Thanks</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=713#respond' onclick='return addComment.moveForm("div-comment-713", "713", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1" id="comment-715">
+				<div id="div-comment-715" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/2789c209b18a0320b59dba144bbafe56?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">Bias</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-715">
+			12/ October/ 2009 at 3:34 AM</a>		</div>
+
+		<p>Much thanks for your program.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=715#respond' onclick='return addComment.moveForm("div-comment-715", "715", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-716">
+				<div id="div-comment-716" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/2789c209b18a0320b59dba144bbafe56?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">Bias</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-716">
+			12/ October/ 2009 at 3:38 AM</a>		</div>
+
+		<p>Dear Andol , I can&#8217;t download the source code .<br />
+please if you cam sent to my email , thanks very much.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=716#respond' onclick='return addComment.moveForm("div-comment-716", "716", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment byuser comment-author-andol bypostauthor even depth-2" id="comment-717">
+				<div id="div-comment-717" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-717">
+			12/ October/ 2009 at 9:07 AM</a>		</div>
+
+		<p>Please try to refer to here below:<br />
+<a href="http://www.andol.info/download/hsv.cpp" rel="nofollow">http://www.andol.info/download/hsv.cpp</a><br />
+<a href="http://www.andol.info/download/HoughCircle.cpp" rel="nofollow">http://www.andol.info/download/HoughCircle.cpp</a><br />
+<a href="http://www.andol.info/download/haarFaceDetect.cpp" rel="nofollow">http://www.andol.info/download/haarFaceDetect.cpp</a></p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=717#respond' onclick='return addComment.moveForm("div-comment-717", "717", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+		<li class="comment odd alt thread-even depth-1 parent" id="comment-877">
+				<div id="div-comment-877" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/f6a9b4ef2bcf6c4e63b763fc2994c285?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.ntu.edu.sg' rel='external nofollow' class='url'>Pan</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-877">
+			29/ January/ 2010 at 8:09 AM</a>		</div>
+
+		<p>The code can run but needs to add all the OpenCV libraries as a Win32 app in Visual C++ 2008 Express Ed. But the code only does color abstraction and does not actually show the location of the hand. What happened?</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=877#respond' onclick='return addComment.moveForm("div-comment-877", "877", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment byuser comment-author-andol bypostauthor even depth-2" id="comment-878">
+				<div id="div-comment-878" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-878">
+			29/ January/ 2010 at 9:33 AM</a>		</div>
+
+		<p>That is a part of hand recognition which abstract the hand contours from background image. About the location of the hand, once the contour can be detected then, by using &#8216;<code>cvFindContours</code>&#8216;  &amp; &#8216;<code>cvApproxPoly</code>&#8216; the location would be available there.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=878#respond' onclick='return addComment.moveForm("div-comment-878", "878", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-886">
+				<div id="div-comment-886" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/00142ebc1e705cfd5cf13f9d9a8df8c5?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">kabir hossain</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-886">
+			4/ February/ 2010 at 2:52 AM</a>		</div>
+
+		<p>thank you for your good job.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=886#respond' onclick='return addComment.moveForm("div-comment-886", "886", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1 parent" id="comment-1070">
+				<div id="div-comment-1070" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/a52e5c3540096384b15380178e0affd5?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">JP Talusan</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1070">
+			22/ May/ 2010 at 1:00 PM</a>		</div>
+
+		<p>Sir, this code works for a live webcam feed, how do you make it work for an input of still image and .avi video files only?</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1070#respond' onclick='return addComment.moveForm("div-comment-1070", "1070", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment byuser comment-author-andol bypostauthor odd alt depth-2" id="comment-1073">
+				<div id="div-comment-1073" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1073">
+			22/ May/ 2010 at 4:35 PM</a>		</div>
+
+		<p>have a look at this <a href="http://www.andol.info/hci/830.htm#comment-1072" rel="nofollow">http://www.andol.info/hci/830.htm#comment-1072</a></p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1073#respond' onclick='return addComment.moveForm("div-comment-1073", "1073", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+		<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-1144">
+				<div id="div-comment-1144" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/8c9bffcbdd761b33f1c64bf07bc3c514?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://atmaja.tk/' rel='external nofollow' class='url'>priyanka</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1144">
+			17/ July/ 2010 at 11:09 AM</a>		</div>
+
+		<p>hello sir,<br />
+while running videos from opencv program some .avi videos run successfully but some .avi vedio does not.<br />
+Is there something like placing dll files there or something else plz help me sir.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1144#respond' onclick='return addComment.moveForm("div-comment-1144", "1144", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment byuser comment-author-andol bypostauthor odd alt depth-2" id="comment-1145">
+				<div id="div-comment-1145" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1145">
+			17/ July/ 2010 at 11:23 AM</a>		</div>
+
+		<p>would you check is there any difference between these two types of .avi videos?</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1145#respond' onclick='return addComment.moveForm("div-comment-1145", "1145", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+		<li class="comment even thread-even depth-1 parent" id="comment-1152">
+				<div id="div-comment-1152" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/7ab246281dccd9c260b931c5bb85d1c0?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">kutu</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1152">
+			19/ July/ 2010 at 9:06 AM</a>		</div>
+
+		<p>hi Andol,<br />
+  iam a student doing project in hand gesture recognition.I want to separate hand region from background in online video.please help me.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1152#respond' onclick='return addComment.moveForm("div-comment-1152", "1152", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment byuser comment-author-andol bypostauthor odd alt depth-2" id="comment-1153">
+				<div id="div-comment-1153" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1153">
+			19/ July/ 2010 at 11:42 AM</a>		</div>
+
+		<p>@Kutu some examples of detecting and extracting hand shapes are recommended to have a look, firstly <img src='http://www.andol.info/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /> </p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1153#respond' onclick='return addComment.moveForm("div-comment-1153", "1153", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-1183">
+				<div id="div-comment-1183" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/a42b4fc56ea4723f33217496f7af4d80?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">eran</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1183">
+			1/ August/ 2010 at 1:46 PM</a>		</div>
+
+		<p>working great!</p>
+<p>Thank you!</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1183#respond' onclick='return addComment.moveForm("div-comment-1183", "1183", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-even depth-1 parent" id="comment-1312">
+				<div id="div-comment-1312" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/026143b28b50e82ebc596fcd72413a11?s=32&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">sam</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1312">
+			3/ October/ 2010 at 7:42 PM</a>		</div>
+
+		<p>Hi!! Andol. Please help me. I compiled source code, but can not find &#8220;VideoInput.h&#8221; this file. You say &#8220;delete videoinput.h&#8221;, and the use of other programs. I ask what program you use . Can you send me all of project? I am a beginner, do not use opencv. sincerely you please help</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1312#respond' onclick='return addComment.moveForm("div-comment-1312", "1312", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment byuser comment-author-andol bypostauthor even depth-2" id="comment-1313">
+				<div id="div-comment-1313" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1313">
+			4/ October/ 2010 at 10:03 AM</a>		</div>
+
+		<p>@Sam This is the full project with only one .cpp file, videoinput.h comes from another video analysis library and it is left in this project with no use. So the solution to &#8216;can not find videoinput.h&#8217; is to delete the line of &#8216;#include &#8216;, then it works as long as your openCV has been configured properly.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1313#respond' onclick='return addComment.moveForm("div-comment-1313", "1313", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-1318">
+				<div id="div-comment-1318" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/d8bddab731639c127bcc4d4a54d712ac?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">Aminur</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1318">
+			6/ October/ 2010 at 6:35 PM</a>		</div>
+
+		<p>Sir, I am a Ph.D. student of Dhaka University of Bangladesh. My research Topic is  &#8220;Bangali Sign Language recognition&#8221;. So Please help me. I compiled your source code, but can not find “VideoInput.h” this file as following error:</p>
+<p>Error	1	fatal error C1083: Cannot open include file: &#8216;VideoInput.h&#8217;: No such file or directory</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1318#respond' onclick='return addComment.moveForm("div-comment-1318", "1318", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment byuser comment-author-andol bypostauthor even depth-2" id="comment-1319">
+				<div id="div-comment-1319" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1319">
+			6/ October/ 2010 at 7:57 PM</a>		</div>
+
+		<p>Hi Aminur, just ignore the line of &#8216;videoinput.h&#8217;, that was a library in my computer for video analysis, not for this project. So you can comment this line, and the code will go.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1319#respond' onclick='return addComment.moveForm("div-comment-1319", "1319", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+		<li class="comment odd alt thread-even depth-1 parent" id="comment-1320">
+				<div id="div-comment-1320" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/d8bddab731639c127bcc4d4a54d712ac?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">Aminur</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1320">
+			8/ October/ 2010 at 7:41 PM</a>		</div>
+
+		<p>Hi, Another problem is raised  when run the &#8220;handDetection source file .CPP&#8221; as follows. What can i do? Please help me.</p>
+<p>Unhandled exception at 0x10111fd1 (cv200.dll) in Andol hand detect.exe: 0xC0000005: Access violation reading location 0xffffffff.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1320#respond' onclick='return addComment.moveForm("div-comment-1320", "1320", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment byuser comment-author-andol bypostauthor even depth-2" id="comment-1323">
+				<div id="div-comment-1323" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1323">
+			11/ October/ 2010 at 11:19 AM</a>		</div>
+
+		<p>This was caused by a incorrect use of function which released the memory already but after that a function unknowingly tried to read this memory address again, which caused the memory reading violation.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1323#respond' onclick='return addComment.moveForm("div-comment-1323", "1323", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-1433">
+				<div id="div-comment-1433" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/ffc261fcebee14ffa05b6b6ab22bea45?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">Koos</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1433">
+			24/ November/ 2010 at 2:44 PM</a>		</div>
+
+		<p>Hello,</p>
+<p>Interesting stuff here! I am wondering do you have or can you (easy) generate a xml file for &#8220;haar-cascade-detection&#8221; of hands? </p>
+<p>Hope I am making sense (yep, new to this).</p>
+<p>Have a good day.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1433#respond' onclick='return addComment.moveForm("div-comment-1433", "1433", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment byuser comment-author-andol bypostauthor even depth-2 parent" id="comment-1434">
+				<div id="div-comment-1434" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1009c0108e71c2eac878ad9017a68717?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn"><a href='http://www.andol.info' rel='external nofollow' class='url'>Andol</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-1434">
+			24/ November/ 2010 at 5:37 PM</a>		</div>
+
+		<p>Hi Koos, the xml file can be made if the sample images are provided, since these samples of both negative and positive are key to cascade training and generating the xml file.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=1434#respond' onclick='return addComment.moveForm("div-comment-1434", "1434", "respond", "833")'>Reply</a>		</div>
+				</div>
+		<ul class='children'>
+		<li class="comment odd alt depth-3" id="comment-2771">
+				<div id="div-comment-2771" class="comment-body">
+				<div class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/f5cbc8a5b494ab0aaeb3f3df21501bc5?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />		<cite class="fn">DKtheGreat</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-1#comment-2771">
+			17/ June/ 2011 at 9:46 AM</a>		</div>
+
+		<p>I&#8217;d like it.</p>
+
+		<div class="reply">
+		<a class='comment-reply-link' href='/hci/830.htm/attachment/handdetection-2?replytocom=2771#respond' onclick='return addComment.moveForm("div-comment-2771", "2771", "respond", "833")'>Reply</a>		</div>
+				</div>
+		</li>
+</ul>
+</li>
+</ul>
+</li>
+
+	</ol>
+	<div class="navigation">
+	<span class='page-numbers current'>1</span>
+<a class='page-numbers' href='http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-2#comments'>2</a>
+<a class='page-numbers' href='http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-3#comments'>3</a>
+<a class="next page-numbers" href="http://www.andol.info/hci/830.htm/attachment/handdetection-2/comment-page-2#comments">Next Comments</a>
+	</div>
+ 
+
+<div id="respond">
+<h3>Leave a Reply</h3>
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="/hci/830.htm/attachment/handdetection-2#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+<form action="http://www.andol.info/wp-comments-post.php" method="post" id="commentform">
+<p><strong>You can use these XHTML tags:</strong><br/><code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+<p><label for="author"><strong>Name</strong> (required)</label><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' /></p>
+<p><label for="email"><strong>Email</strong> (Will be confidential, required)</label><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' /></p>
+<p><label for="url"><strong>Website</strong></label><input type="text" name="url" id="url" value="" size="22" tabindex="3" /></p>
+
+<p><input name="submit" type="submit" id="cfsubmit" tabindex="5" value="That's it!" />
+<input type='hidden' name='comment_post_ID' value='833' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="b872ee62ce" /></p>
+</form>
+
+</div>
+ </div>
+</div>
+
+<!---end loop--->
+
+</div>
+
+<div id="sidebar">
+<!-- begin sidebar -->
+<div id="menu">
+<ul>
+
+<!--
+ <li id="search">
+    <label for="s"><div class='sidebar-meta'>LOOKING FOR SOMETHING?</div></label>
+    <form method="get" id="searchform" action="http://www.andol.info/"><div><input type="text" value="" name="s" id="s" /><input type="submit" id="searchsubmit" value="Search" /></div><div id="searchsuggestions"></div></form> </li>
+
+-->
+<li id="googleads">
+	<script type="text/javascript"><!--
+	google_ad_client = "ca-pub-1646140975322436";
+	/* sidebarad */
+	google_ad_slot = "1213125450";
+	google_ad_width = 250;
+	google_ad_height = 250;
+	//-->
+	</script>
+	<script type="text/javascript"
+	src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+	</script>
+
+	<script type="text/javascript"><!--
+	google_ad_client = "ca-pub-1646140975322436";
+	/* sidebar 2 */
+	google_ad_slot = "5034885325";
+	google_ad_width = 250;
+	google_ad_height = 250;
+	//-->
+	</script>
+	<script type="text/javascript"
+	src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+	</script>
+</li>
+
+
+<li id="popular-posts">
+<div class='sidebar-meta'>POSTS ABOUT <strong>OPENCV</strong></div><ul><li><a href="http://www.andol.info/hci/1714.htm" target="_blank" rel="internal" title="An example of detecting object motions using openCV - 5 views">An example of detecting object motions using openCV</a> </li><li><a href="http://www.andol.info/research/746.htm" target="_blank" rel="internal" title="Rapid color objects detectioin using openCV - 0 views">Rapid color objects detectioin using openCV</a> </li><li><a href="http://www.andol.info/hci/1866.htm" target="_blank" rel="internal" title="OpenCV mailing list - a collection of resources - 0 views">OpenCV mailing list - a collection of resources</a> </li><li><a href="http://www.andol.info/hci/1455.htm" target="_blank" rel="internal" title="Coming soon: A review of openCV detection & recognition - 1 views">Coming soon: A review of openCV detection & recognition</a> </li><li><a href="http://www.andol.info/hci/1950.htm" target="_blank" rel="internal" title="HIGHGUI ERROR: V4L: index 0 is not correct - 0 views">HIGHGUI ERROR: V4L: index 0 is not correct</a> </li><li><a href="http://www.andol.info/research/1593.htm" target="_blank" rel="internal" title="Hand detection by using cvSnakeImage - 12 views">Hand detection by using cvSnakeImage</a> </li><li><a href="http://www.andol.info/hci/1101.htm" target="_blank" rel="internal" title="5 inspiring hands detection videos  - 2 views">5 inspiring hands detection videos </a> </li><li><a href="http://www.andol.info/hci/803.htm" target="_blank" rel="internal" title="Memory leaking debugging errors - 0 views">Memory leaking debugging errors</a> </li><li><a href="http://www.andol.info/hci/785.htm" target="_blank" rel="internal" title="openCV Memory leak - 0 views">openCV Memory leak</a> </li><li><a href="http://www.andol.info/hci/1862.htm" target="_blank" rel="internal" title="A review of people counting using openCV part 2 - 2 views">A review of people counting using openCV part 2</a> </li><li><a href="http://www.andol.info/hci/1513.htm" target="_blank" rel="internal" title="Tracking a hand manipulating objects - 16 views">Tracking a hand manipulating objects</a> </li><li><a href="http://www.andol.info/hci/963.htm" target="_blank" rel="internal" title="OpenCV memory leaking management in C/C++ - 36 views">OpenCV memory leaking management in C/C++</a> </li><li><a href="http://www.andol.info/research/1698.htm" target="_blank" rel="internal" title="Building projects in openCV 2.0 - 3 views">Building projects in openCV 2.0</a> </li><li><a href="http://www.andol.info/hci/1850.htm" target="_blank" rel="internal" title="Doing openCV in pandaboard 3 - successful installation - 0 views">Doing openCV in pandaboard 3 - successful installation</a> </li><li><a href="http://www.andol.info/research/1756.htm" target="_blank" rel="internal" title="Mapping object positions to mouse coordinates in openCV - 25 views">Mapping object positions to mouse coordinates in openCV</a> </li></ul></li>
+
+<li id="past-comment">
+<div class='sidebar-meta'>RECENT COMMENTS</div>
+<ul>
+<li>anil:<a href="http://www.andol.info/hci/830.htm#comment-4742" title="on Hand detection using openCV" target='_blank' rel='internal'>@andol
+we r developing a virtual keyboard..
+we want 2 give keypress </a></li>
+<li>rbni2:<a href="http://www.andol.info/hci/749.htm#comment-4728" title="on Circle recognition using openCV" target='_blank' rel='internal'>Dear Sir,
+after running houghcircles.cpp i got black src window.Nothi</a></li>
+<li>rbni2:<a href="http://www.andol.info/hci/749.htm#comment-4721" title="on Circle recognition using openCV" target='_blank' rel='internal'>Dear Sir,
+would u please send me the source code of tennis ball recog</a></li>
+<li>Nathanial Lellig:<a href="http://www.andol.info/hci/774.htm/attachment/colorrecg#comment-4719" title="on colorrecg" target='_blank' rel='internal'>Hey, Wonderful job! I saw this really great post today.</a></li>
+<li>rbni2:<a href="http://www.andol.info/hci/749.htm#comment-4717" title="on Circle recognition using openCV" target='_blank' rel='internal'>Dear Andol,
+would u please send me the code of tennis ball detection </a></li>
+<li>invest liberty reserve:<a href="http://www.andol.info/hci/774.htm/attachment/colorrecg#comment-4712" title="on colorrecg" target='_blank' rel='internal'>Andol &raquo; colorrecg I was recommended this blog by my cousin. I'm </a></li>
+<li>daryl:<a href="http://www.andol.info/hci/1830.htm#comment-4699" title="on Detecting hand gestures using Haarcascades training" target='_blank' rel='internal'>Hi sir, I'm trying to run your "VERSION: HAND DETECTION 1.0" code. but</a></li>
+<li>Damaris Pillers:<a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2#comment-4694" title="on handDetection source file .CPP" target='_blank' rel='internal'>This design is wicked! You most certainly know how to keep a reader en</a></li>
+<li>Knock Knock Jokes:<a href="http://www.andol.info/hci/774.htm/attachment/colorrecg#comment-4687" title="on colorrecg" target='_blank' rel='internal'>Andol &raquo; colorrecg I was suggested this web site by my cousin. I'</a></li>
+<li>browse colors:<a href="http://www.andol.info/hci/830.htm/attachment/handdetection-2#comment-4684" title="on handDetection source file .CPP" target='_blank' rel='internal'>It definitely seems as if you are well informed about this.</a></li>
+</ul></li>
+
+
+<li id="archives"><div class='sidebar-meta'>ARCHIVES</div> 	<ul>
+	 	<li><a href='http://www.andol.info/date/2012/01' title='January 2012'>January 2012</a></li>
+	<li><a href='http://www.andol.info/date/2011/12' title='December 2011'>December 2011</a></li>
+	<li><a href='http://www.andol.info/date/2011/11' title='November 2011'>November 2011</a></li>
+	<li><a href='http://www.andol.info/date/2011/10' title='October 2011'>October 2011</a></li>
+	<li><a href='http://www.andol.info/date/2011/07' title='July 2011'>July 2011</a></li>
+	<li><a href='http://www.andol.info/date/2011/04' title='April 2011'>April 2011</a></li>
+	<li><a href='http://www.andol.info/date/2011/03' title='March 2011'>March 2011</a></li>
+	<li><a href='http://www.andol.info/date/2011/02' title='February 2011'>February 2011</a></li>
+	<li><a href='http://www.andol.info/date/2010/12' title='December 2010'>December 2010</a></li>
+	<li><a href='http://www.andol.info/date/2010/11' title='November 2010'>November 2010</a></li>
+	<li><a href='http://www.andol.info/date/2010/10' title='October 2010'>October 2010</a></li>
+	<li><a href='http://www.andol.info/date/2010/09' title='September 2010'>September 2010</a></li>
+ 	</ul>
+</li>
+
+
+
+
+
+
+</ul>
+
+
+
+</div>
+
+
+
+<!-- end sidebar -->
+
+
+
+</div>
+<!-- begin footer -->
+<div class="footer">
+
+Copyrights 2006-2012 &copy; Andol Li | Theme <a href="http://www.mandarinmusing.com">Tree2</a>, designed by Andol | Powered by <a href="http://wordpress.org/">WordPress</a><br/>
+<small><a href='http://www.andol.info' title='go to andol.info'>www.Andol.info</a>-58 queries in 0.396 seconds.</small> <a href='#top'>Go to top</a>
+</div>
+
+
+<!--google plus-->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">  {lang: 'en-GB'}</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6237890-1");
+pageTracker._trackPageview();
+</script>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+	
+
+
